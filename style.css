@@ -10,22 +10,26 @@ body {
 }
 
 .header {
-    background-color: #f30fcd;
+    background-color: #0776e6;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 85px;
     padding: 5px 10%;
+    
 }
 
 .header .logo{
     cursor: pointer;
+    
 }
 
 .header .logo img{
     height: 70px;
     width: auto;
     transition: all 0.3s;
+   
+    
 }
 
 .header .logo img:hover{
@@ -57,9 +61,9 @@ body {
 
 .header .btn button{
     font-weight: 700;
-    color: aqua;
+    color: rgb(4, 12, 12);
     padding: 9px 25px;
-    background: #ff9dc3;
+    background: #e5e8eb;
     border: none;
     border-radius: 50px;
     cursor: pointer;
@@ -67,7 +71,7 @@ body {
 }
 
 .header .btn button:hover{
-    background-color: rgb(255, 0, 191);
+    background-color: rgb(7, 4, 6);
     color: #fff59d;
     transform: scale(1.2);
 }
