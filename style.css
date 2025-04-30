@@ -14,7 +14,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 85px;
+    height: 35px;
     padding: 5px 10%;
     
 }
@@ -28,12 +28,15 @@ body {
     height: 70px;
     width: auto;
     transition: all 0.3s;
-   
-    
+    border-radius: 50%;
 }
 
 .header .logo img:hover{
     transform: scale(1.2);
+}
+
+.nav {
+    
 }
 
 .header .nav-links{
@@ -77,5 +80,9 @@ body {
 }
 
 .portada{
-    width: 50%;
+    width: 100%;
+}
+
+figcaption {
+    font-size: x-small;
 }

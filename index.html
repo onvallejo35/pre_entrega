@@ -6,13 +6,14 @@
     <title>Oscar Pc</title>
     <link rel="stylesheet" href="/pre_entrega/style.css">
     <link rel="shortcut icon" href="imagenes/favicon.ico" type="image/x-icon">
+    <meta name="author" content="Oscar Nilton Vallejo">
 </head>
 <body>
     <header class="header">  <!-- cabecera del sitio, puede incluir el logo y el titulo principal -->
         <div class="logo">
-            <img src="https://img.freepik.com/premium-vector/computer-repair-service-logo-template-design-vector-illustration_498048-1056.jpg" alt="logo de la marca">
+            <img src="imagenes/logo final.jpeg" alt="logo de la marca">
         </div>
-        <nav> <!-- barra de navegación con un menu de navegación -->
+        <nav class="nav" > <!-- barra de navegación con un menu de navegación -->
             <ul class="nav-links">
                 <li><a href="#">Services</a></li>
                 <li><a href="#">Proyects</a></li>
@@ -24,24 +25,82 @@
 
     </header>
     <main> <!-- contenido princpal de la página -->
-        
-        <img class="portada" src="imagenes/bureau-gamer.jpg" alt="fotoportada">
-        <h1>Productos Girls</h1>
-        <section>
-            <video width="570px" controls>
-                <source src="imagenes/video.mp4" type="">
-                <track src="subtitulos.vtt" kind="subtitles" srclang="es" label="Spanish"/>
-            </video>
-        
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/HA11RsLyJEY?si=k-Xku0-x69jAxKzg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div>
+            <img class="portada" src="imagenes/portada final.jpg"           alt="fotoportada">
+            <h1>Tendencia Hermosa !
+        </div>
+        <section id="galeria">
+            <figure>
+            <img style="width:15%" src="imagenes/WhatsApp Image 2025-04-27 at 22.44.46.jpeg" alt="imagen1">
+            <figcaption>
+                productos cosmeticos de tendencia
+            </figcaption>   
+            <img style="width:15%" src="imagenes/WhatsApp Image 2025-04-27 at 22.44.46.jpeg" alt="imagen1">
+            <figcaption>
+                productos cosmeticos de tendencia
+            </figcaption>  
+            <img style="width:15%" src="imagenes/WhatsApp Image 2025-04-27 at 22.44.46.jpeg" alt="imagen1">
+            <figcaption>
+                productos cosmeticos de tendencia
+            </figcaption>  
+            <img style="width:15%" src="imagenes/WhatsApp Image 2025-04-27 at 22.44.46.jpeg" alt="imagen1">
+            <figcaption>
+                productos cosmeticos de tendencia
+            </figcaption>  
+            <img style="width:15%" src="imagenes/WhatsApp Image 2025-04-27 at 22.44.46.jpeg" alt="imagen1">
+            <figcaption>
+                productos cosmeticos de tendencia
+            </figcaption>  
+            <img style="width:15%" src="imagenes/WhatsApp Image 2025-04-27 at 22.44.46.jpeg" alt="imagen1">
+            <figcaption>
+                productos cosmeticos de tendencia
+            </figcaption>  
+            <img style="width:15%" src="imagenes/WhatsApp Image 2025-04-27 at 22.44.46.jpeg" alt="imagen1">
+            <figcaption>
+                productos cosmeticos de tendencia
+            </figcaption>  
+            </figure>
         </section>
-        <form action="URL_de_destino" method="POST">
-            <input type="text" name="nombre" id="nombre" placeholder="nombre">
-            <input type="email" name="email" id="email" placeholder="Correo electronico">
-            <textarea name="mensaje" id="mensaje" rows="4" cols="50"
+        <section>
+            <aside> 
+
+            </aside>
+        </section>
+        <section>
+            
+                <video width="570px" controls>
+                    <source src="imagenes/video.mp4" type="">
+                    <track src="subtitulos.vtt" kind="subtitles" srclang="es" label="Spanish"/>
+                </video>
+        </section>
+        <section class="formulario" >
+            <h3>Formulario de Contacto</h3>
+            <form action="https://formspree.io/f/mgvkonvy" method="post">   
+
+                <label for="nombre">Nombre</label>
+                <input required type="text" name="nombre" id="nombre" placeholder="nombre">
+
+                <label for="email">Correo electronico</label>
+                <input type="email" name="email" id="email" placeholder="Correo electronico">
+
+                <br>
+
+                <label for="Mensaje">Mensaje</label>
+                <textarea name="mensaje" id="mensaje" rows="4" cols="50"
                 placeholder="mensaje"></textarea>
-            <button type="submit">Enviar</button>
-        </form>
+
+                <br>
+
+                <label for="Tema">Motivo de contacto:</label>
+                <select name="Tema" id="Tema">
+                    <option value="consulta">Consulta</option>
+                    <option value="sugerencia">Sugerencia</option>
+                    <option value="Unite">Unite</option>
+                </select>    
+                <br><br>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
     </main>
     <footer> <!-- pie de pagina, redes socilaes, etc. -->
 
