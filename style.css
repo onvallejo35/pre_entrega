@@ -16,6 +16,7 @@ body {
     align-items: center;
     height: 35px;
     padding: 5px 10%;
+    position:fixed  ;
     
 }
 
@@ -85,4 +86,9 @@ body {
 
 figcaption {
     font-size: x-small;
+}
+
+#contenedor {
+    display:inline-flex;
+    width: 70%;
 }
