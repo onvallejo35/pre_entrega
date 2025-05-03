@@ -2,31 +2,35 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-size: 20px;
-}
+}  
 
 body {
-    background-color: #69f0e5;
+    background-image: url(imagenes/portada\ final.jpg);
+
 }
 
 .header {
-    background-color: #0776e6;
+    background-color: #8abef1;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 35px;
-    padding: 5px 10%;
-    position:fixed  ;
+    justify-content:center;
+    align-items:center;
+    justify-content: space-around;
+    height: 45px;
+    padding: 23px 5%;
+    width: 100%;
+    border-style: hidden;
+    border-color: #ff9dc3 solid 3px;
+
     
 }
 
 .header .logo{
     cursor: pointer;
-    
+    margin-right: auto;
 }
 
 .header .logo img{
-    height: 70px;
+    height: 40px;
     width: auto;
     transition: all 0.3s;
     border-radius: 50%;
@@ -36,17 +40,14 @@ body {
     transform: scale(1.2);
 }
 
-.nav {
-    
-}
-
 .header .nav-links{
     list-style: none;
 }
 
 .header .nav-links li{
-    display: inline-block;
-    padding: 0 20px;
+    display:inline-flex;
+    justify-content:space-around;
+    padding: 25px;
 }
 
 .header .nav-links li:hover{
@@ -66,8 +67,8 @@ body {
 .header .btn button{
     font-weight: 700;
     color: rgb(4, 12, 12);
-    padding: 9px 25px;
-    background: #e5e8eb;
+    padding: 5px 5px;
+    background: #a5c8ea;
     border: none;
     border-radius: 50px;
     cursor: pointer;
@@ -91,4 +92,33 @@ figcaption {
 #contenedor {
     display:inline-flex;
     width: 70%;
+}
+
+.logo {
+    
+}
+
+div > img {
+    border-radius: 8px;
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 0px 30px #000;
+    margin: 15px 15px;
+
+}
+div { 
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(350px, 1fr)
+    );
+    gap: 10px;
+}
+
+h1{
+    text-align: center;
+    border-color: #ff9dc3;
+    width: 100%;
+    background-color: #ff9dc3;
+    box-shadow: 0px 0px 15px #fff59d;
 }
