@@ -47,9 +47,8 @@ body {
 }
 
 .header .nav-links li{
-    display:inline-flex;
-    justify-content:space-around;
-    padding: 25px;
+    padding: 4px;
+    display: inline-block;
 }
 
 .header .nav-links li:hover{
@@ -91,21 +90,20 @@ figcaption {
     font-size: x-small;
 }
 
-#contenedor {
-    display:inline-flex;
-    width: 70%;
-}
+.imagenes{
+    display: inline-block;
+    padding: 10px;
 
-.logo {
-    
+    width: 100vw; /* La imagen ocupará el 80% del ancho del viewport */
+      height: auto; /* Mantiene la proporción */
+
 }
 
 div > img {
-    border-radius: 8px;
-    width: 100%;
-    height: auto;
-    box-shadow: 0px 0px 30px #000;
-    margin: 15px 15px;
+    border-radius: 10px;
+    width: 230px;
+    box-shadow: 0px 0px 45px #ee0ba2;
+
 
 }
 div { 
@@ -114,14 +112,31 @@ div {
         auto-fit,
         minmax(350px, 1fr)
     );
-    gap: 50px;
+    gap: 3%;
+
+    align-items: center;
+}
+
+.h1{
+    text-align: center;
+    font-family: "Trade Winds", system-ui;
+    font-weight: 400;
+    font-style: normal;
+
+      
+  
 }
 
 h1{
     text-align: center;
-    border-color: #ff9dc3;
+    border-color: #091f0d;
     width: 100%;
     background-color: #ff9dc3;
     box-shadow: 0px 0px 15px #fff59d;
     border-radius: 8px;
+
+}
+
+.footerFoto{
+    border: 2px salmon solid;
 }
