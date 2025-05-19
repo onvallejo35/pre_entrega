@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: rgb(240, 53, 53);
+}
+
+nav {
+    background-color: blue;
+    width: 100%;
+    height: 14vh;
+}
+.brand img{
+    width: 2em;
+    border-radius: 50%;
+    padding-top: 6px;
+}
+
+#check {
+    display: none;
+}
+
+.btnMenu{
+    color: aliceblue;
+    font-size: 35px;
+    float: right;
+    line-height: 15vh;
+    margin-right: 5%;
+    display: none;
+}
+.brand{
+    margin-left: 5%;
+    line-height: 15vh;
+}
+.brand a{
+    color: bisque;
+    font-size: 35px;
+}
+nav ul{
+    float: right;
+    margin-right: 5%;
+}
+nav ul li a{
+    color: aqua;
+    font-size: 1.2em;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 15vh;
+    margin-left: 15px;
+}
+
+@media (max-width:520px){
+    .btnMenu{
+        display: block;
+    }
+    ul{
+        background-color: blue;
+        width: 100%;
+        position: fixed;
+        top: 15vh;
+        text-align: center;
+    }
+    nav ul li{
+        display: block;
+    }
+    #check:checked ~ ul{
+        display: block;
+    }
+}
