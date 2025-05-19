@@ -6,6 +6,8 @@
 
 body {
     background-image: url(imagenes/portada\ final.jpg);
+    width: 100vw;
+    height: 100vh;
 
 }
 
@@ -94,16 +96,18 @@ figcaption {
     width: 70%;
 }
 
-.logo {
-    
+.imagenes{
+    display: inline-block;
+    border: rgba(14, 61, 83, 0.6) solid 3px;
+    margin: auto;
+    background-color: rgba(14, 61, 83, 0.5);
+    border-radius: 5px;
 }
 
 div > img {
-    border-radius: 8px;
-    width: 100%;
-    height: auto;
+    border-radius: 18px;
+    width: 30vw;
     box-shadow: 0px 0px 30px #000;
-    margin: 15px 15px;
 
 }
 div { 
@@ -117,8 +121,12 @@ div {
 
 h1{
     text-align: center;
-    border-color: #ff9dc3;
-    width: 100%;
-    background-color: #ff9dc3;
+    width: 90%;
+    background-color: rgba(14, 61, 83, 0.5);
     box-shadow: 0px 0px 15px #fff59d;
+    margin: auto;
+    padding-top: 2px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border-color: solid blue 2px;
 }
