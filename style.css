@@ -6,8 +6,12 @@
 
 body {
     background-image: url(imagenes/portada\ final.jpg);
+<<<<<<< HEAD
     width: 100vw;
     height: 100vh;
+=======
+    opacity: 95%;
+>>>>>>> 0aae2c1f663fceeb4992b291d23dadaef9fac276
 
 }
 
@@ -22,6 +26,7 @@ body {
     width: 100%;
     border-style: hidden;
     border-color: #ff9dc3 solid 3px;
+    border-radius: 8px;
 
     
 }
@@ -47,9 +52,8 @@ body {
 }
 
 .header .nav-links li{
-    display:inline-flex;
-    justify-content:space-around;
-    padding: 25px;
+    padding: 4px;
+    display: inline-block;
 }
 
 .header .nav-links li:hover{
@@ -91,11 +95,14 @@ figcaption {
     font-size: x-small;
 }
 
-#contenedor {
-    display:inline-flex;
-    width: 70%;
-}
+.imagenes{
+    display: inline-block;
+    padding: 10px;
 
+    width: 100vw; /* La imagen ocupará el 80% del ancho del viewport */
+      height: auto; /* Mantiene la proporción */
+
+<<<<<<< HEAD
 .imagenes{
     display: inline-block;
     border: rgba(14, 61, 83, 0.6) solid 3px;
@@ -108,6 +115,15 @@ div > img {
     border-radius: 18px;
     width: 30vw;
     box-shadow: 0px 0px 30px #000;
+=======
+}
+
+div > img {
+    border-radius: 10px;
+    width: 230px;
+    box-shadow: 0px 0px 45px #ee0ba2;
+
+>>>>>>> 0aae2c1f663fceeb4992b291d23dadaef9fac276
 
 }
 div { 
@@ -116,11 +132,24 @@ div {
         auto-fit,
         minmax(350px, 1fr)
     );
-    gap: 10px;
+    gap: 3%;
+
+    align-items: center;
+}
+
+.h1{
+    text-align: center;
+    font-family: "Trade Winds", system-ui;
+    font-weight: 400;
+    font-style: normal;
+
+      
+  
 }
 
 h1{
     text-align: center;
+<<<<<<< HEAD
     width: 90%;
     background-color: rgba(14, 61, 83, 0.5);
     box-shadow: 0px 0px 15px #fff59d;
@@ -129,4 +158,16 @@ h1{
     margin-top: 5px;
     border-radius: 5px;
     border-color: solid blue 2px;
+=======
+    border-color: #091f0d;
+    width: 100%;
+    background-color: #ff9dc3;
+    box-shadow: 0px 0px 15px #fff59d;
+    border-radius: 8px;
+
+}
+
+.footerFoto{
+    border: 2px salmon solid;
+>>>>>>> 0aae2c1f663fceeb4992b291d23dadaef9fac276
 }
