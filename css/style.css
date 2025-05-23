@@ -4,14 +4,18 @@ body {
   font-family: 'Roboto', sans-serif; /* Fuente importada desde Google Fonts */
   margin: 0;                          /* Elimina márgenes del navegador */
   padding: 0;                         /* Elimina relleno por defecto */
+  background-image: 
+  opacity: 0.9;
+  border: 5px solid #f309ad;
 }
 
 /* Estilo para el encabezado de la página */
 header {
-  background-color: #4CAF50; /* Fondo verde */
+  background-color: #f309ad; /* Fondo verde */
   color: white;              /* Texto blanco */
   padding: 20px;             /* Espacio interior */
   text-align: center;        /* Centra el texto */
+  border-radius: 4px;
 }
 
 /* Navegación en forma de lista horizontal */
@@ -34,20 +38,39 @@ nav ul li a {
 section {
   padding: 20px;             /* Espacio interior */
   text-align: center;        /* Centra el texto */
+  color: #060808;
+  align-items: center;
+}
+
+figure img {
+    width: 18em;
+    border-radius: 50%;
+    opacity: 0.9;
+    box-shadow: 0px 0px 50px rgba(247, 6, 118, 0.9);
+    
 }
 
 /* Contenedor de los productos con Flexbox */
 .productos-container {
   display: flex;             /* Activa Flexbox */
   justify-content: center;   /* Centra horizontalmente */
-  gap: 20px;                 /* Espacio entre productos */
+  gap: 30px;                 /* Espacio entre productos */
   flex-wrap: wrap;           /* Permite que bajen a otra línea en pantallas pequeñas */
   margin-top: 20px;          /* Espacio superior */
+}
+
+#inicio h2 {
+    font-size: 3rem;
+}
+
+section h2{
+     font-size: 2rem;
 }
 
 /* Cada tarjeta de producto */
 .producto {
   text-align: center;        /* Centra el contenido */
+  box-shadow: 0 10px 20px rgba(247, 6, 118, 0.7);
 }
 
 /* Imágenes de los productos */
@@ -56,6 +79,14 @@ section {
   height: 150px;             /* Alto fijo */
   object-fit: cover;         /* Cubre el área sin deformarse */
 }
+
+.h3 {
+    color: #0c0207;
+    font-size: 2.2rem;
+    background-image: url(/imagenes/portada\ final.jpg);
+}
+
+
 
 /* Estilo para el formulario de contacto */
 form {
@@ -76,7 +107,7 @@ input, textarea {
 /* Botón del formulario */
 button {
   padding: 10px;             /* Espacio interior */
-  background-color: #4CAF50; /* Fondo verde */
+  background-color: #f10a76; /* Fondo verde */
   color: white;              /* Texto blanco */
   border: none;              /* Sin borde */
   border-radius: 4px;        /* Bordes redondeados */
@@ -85,7 +116,7 @@ button {
 
 /* Estilo para el pie de página */
 footer {
-  background-color: #333;    /* Fondo oscuro */
+  background-color: #f10a76;    /* Fondo oscuro */
   color: white;              /* Texto blanco */
   text-align: center;        /* Centrado de texto */
   padding: 15px;             /* Espacio interior */
@@ -96,6 +127,16 @@ footer {
 
 /* Media Query para CELULARES (pantallas pequeñas, hasta 600px) */
 @media (max-width: 600px) {
+
+  figure img {
+    width: 13em;    
+}
+
+  .h3{
+    color: #0a0106ee;
+    font-size: 0.9rem;
+}
+
   nav ul {
     flex-direction: column;  /* Muestra los enlaces uno debajo del otro */
     gap: 10px;               /* Menor espacio entre ellos */
@@ -118,3 +159,4 @@ footer {
 @media (min-width: 1025px) {
   .productos-container {
     justify-content: space-between; /* Aumenta el espacio entre productos */
+
