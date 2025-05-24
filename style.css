@@ -1,124 +1,176 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}  
-
+/* Fuente predeterminada del sitio */
 body {
-    background-image: url(imagenes/portada\ final.jpg);
-
+  font-family: 'Roboto', sans-serif; /* Fuente importada desde Google Fonts */
+  margin: 0;                          /* Elimina márgenes del navegador */
+  padding: 0;                         /* Elimina relleno por defecto */
+  background-image: 
+  opacity: 0.9;
+  border: 5px solid #f309ad;
 }
 
-.header {
-    background-color: #8abef1;
-    display: flex;
-    justify-content:center;
-    align-items:center;
-    justify-content: space-around;
-    height: 45px;
-    padding: 23px 5%;
-    width: 100%;
-    border-style: hidden;
-    border-color: #ff9dc3 solid 3px;
-
-    
+/* Estilo para el encabezado de la página */
+header {
+  background-color: #f309ad; /* Fondo verde */
+  color: white;              /* Texto blanco */
+  padding: 20px;             /* Espacio interior */
+  text-align: center;        /* Centra el texto */
+  border-radius: 4px;
 }
 
-.header .logo{
-    cursor: pointer;
-    margin-right: auto;
+/* Navegación en forma de lista horizontal */
+nav ul {
+  list-style: none;          /* Elimina viñetas */
+  padding: 0;                /* Elimina relleno */
+  display: flex;             /* Activa Flexbox */
+  justify-content: center;   /* Centra los elementos horizontalmente */
+  gap: 20px;                 /* Espacio entre los ítems de la lista */
 }
 
-.header .logo img{
-    height: 40px;
-    width: auto;
-    transition: all 0.3s;
+/* Enlaces del menú */
+nav ul li a {
+  color: white;              /* Texto blanco */
+  text-decoration: none;     /* Sin subrayado */
+  font-weight: bold;         /* Negrita */
+}
+
+/* Estilo general para todas las secciones */
+section {
+  padding: 20px;             /* Espacio interior */
+  text-align: center;        /* Centra el texto */
+  color: #060808;
+  align-items: center;
+  
+}
+
+figure img {
+    width: 18em;
     border-radius: 50%;
-}
-
-.header .logo img:hover{
-    transform: scale(1.2);
-}
-
-.header .nav-links{
-    list-style: none;
-}
-
-.header .nav-links li{
-    display:inline-flex;
-    justify-content:space-around;
-    padding: 25px;
-}
-
-.header .nav-links li:hover{
-    transform: scale(1.1);
-}
-
-.header .nav-links a{
-    font-size: 700;
-    color: antiquewhite;
-    text-decoration: none;
-}
-
-.header .nav-links li a:hover{
-    color: #ff9dc3;
-}
-
-.header .btn button{
-    font-weight: 700;
-    color: rgb(4, 12, 12);
-    padding: 5px 5px;
-    background: #a5c8ea;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-}
-
-.header .btn button:hover{
-    background-color: rgb(7, 4, 6);
-    color: #fff59d;
-    transform: scale(1.2);
-}
-
-.portada{
-    width: 100%;
-}
-
-figcaption {
-    font-size: x-small;
-}
-
-#contenedor {
-    display:inline-flex;
-    width: 70%;
-}
-
-.logo {
+    opacity: 0.9;
+    box-shadow: 0px 0px 50px rgba(247, 6, 118, 0.9);
+    
     
 }
 
-div > img {
-    border-radius: 8px;
-    width: 100%;
-    height: auto;
-    box-shadow: 0px 0px 30px #000;
-    margin: 15px 15px;
-
-}
-div { 
-    display: grid;
-    grid-template-columns: repeat(
-        auto-fit,
-        minmax(350px, 1fr)
-    );
-    gap: 10px;
+/* Contenedor de los productos con Flexbox */
+.productos-container {
+  display: flex;             /* Activa Flexbox */
+  justify-content: center;   /* Centra horizontalmente */
+  gap: 30px;                 /* Espacio entre productos */
+  flex-wrap: wrap;           /* Permite que bajen a otra línea en pantallas pequeñas */
+  margin-top: 20px;          /* Espacio superior */
 }
 
-h1{
+#inicio h2 {
+    font-size: 3rem;
+}
+h2{
     text-align: center;
-    border-color: #ff9dc3;
-    width: 100%;
-    background-color: #ff9dc3;
-    box-shadow: 0px 0px 15px #fff59d;
+    font-size: 2rem;
+
 }
+
+
+#inicio{
+    background-image: url(/imagenes/portada\ final.jpg);
+}
+
+/* Cada tarjeta de producto */
+.producto {
+  text-align: center;        /* Centra el contenido */
+  box-shadow: 0 10px 20px rgba(247, 6, 118, 0.7);
+  
+}
+
+/* Imágenes de los productos */
+.producto img {
+  width: 150px;              /* Ancho fijo */
+  height: 150px;             /* Alto fijo */
+  object-fit: cover;         /* Cubre el área sin deformarse */
+}
+
+
+.h3 {
+    color: #0c0207;
+    font-size: 2.2rem;
+    justify-content: center;
+    text-align: center;
+    padding: 1em;
+}
+
+
+#contacto{
+    background-image: url(/imagenes/portada\ final.jpg);
+}
+
+/* Estilo para el formulario de contacto */
+form {
+  display: flex;             /* Activa Flexbox */
+  flex-direction: column;    /* Coloca los elementos en columna */
+  gap: 10px;                 /* Espacio entre campos */
+  max-width: 500px;          /* Ancho máximo */
+  margin: 0 auto;            /* Centrado horizontal */
+  
+}
+
+/* Campos del formulario */
+input, textarea {
+  padding: 10px;             /* Espacio interior */
+  border: 1px solid #ccc;    /* Borde gris claro */
+  border-radius: 4px;        /* Bordes redondeados */
+}
+
+/* Botón del formulario */
+button {
+  padding: 10px;             /* Espacio interior */
+  background-color: #f10a76; /* Fondo verde */
+  color: white;              /* Texto blanco */
+  border: none;              /* Sin borde */
+  border-radius: 4px;        /* Bordes redondeados */
+  cursor: pointer;           /* Cambia el cursor al pasar por encima */
+}
+
+/* Estilo para el pie de página */
+footer {
+  background-color: #f10a76;    /* Fondo oscuro */
+  color: white;              /* Texto blanco */
+  text-align: center;        /* Centrado de texto */
+  padding: 15px;             /* Espacio interior */
+  margin-top: 30px;          /* Separación del contenido anterior */
+}
+
+/* ------------------ MEDIA QUERIES ------------------ */
+
+/* Media Query para CELULARES (pantallas pequeñas, hasta 600px) */
+@media (max-width: 600px) {
+
+  figure img {
+    width: 13em;    
+}
+
+  .h3{
+    color: #0a0106ee;
+    font-size: 0.9rem;
+}
+
+  nav ul {
+    flex-direction: column;  /* Muestra los enlaces uno debajo del otro */
+    gap: 10px;               /* Menor espacio entre ellos */
+  }
+
+  .productos-container {
+    flex-direction: column;  /* Apila los productos en una columna */
+    align-items: center;     /* Centra verticalmente */
+  }
+}
+
+/* Media Query para TABLETS (de 601px a 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .productos-container {
+    justify-content: space-evenly; /* Distribuye los productos uniformemente */
+  }
+}
+
+/* Media Query para PC (más de 1024px) */
+@media (min-width: 1025px) {
+  .productos-container {
+    justify-content: space-between; /* Aumenta el espacio entre productos */

@@ -1,90 +1,137 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> <!-- Indica el tipo de documento HTML -->
+<html lang="es"> <!-- El idioma principal del contenido es español -->
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oscar Pc</title>
-    <link rel="stylesheet" href="/pre_entrega/style.css">
-    <link rel="shortcut icon" href="imagenes/favicon.ico" type="image/x-icon">
-    <meta name="author" content="Oscar Nilton Vallejo">
+  <meta charset="UTF-8"> <!-- Establece la codificación de caracteres como UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace que el sitio sea responsive -->
+  <title>Proyecto Flexbox Responsive</title> <!-- Título que se muestra en la pestaña del navegador -->
+  <link rel="stylesheet" href="/css/style.css"> <!-- Vincula la hoja de estilos externa -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> <!-- Fuente Roboto desde Google Fonts -->
 </head>
+
 <body>
-    <header class="header">  <!-- cabecera del sitio, puede incluir el logo y el titulo principal -->
-        <div class="logo">
-            <img src="imagenes/logo final.jpeg" alt="logo de la marca">
+  <!-- Encabezado principal del sitio -->
+  <header>
+    <h1>mundo cosmeticos</h1> <!-- Título del sitio web -->
+    <nav> <!-- Navegación principal -->
+      <ul>
+        <li><a href="#inicio">Inicios</a></li> <!-- Enlace a la sección de inicio -->
+        <li><a href="#productos">Productos</a></li> <!-- Enlace a la sección de productos -->
+        <li><a href="#contacto">Contacto</a></li> <!-- Enlace a la sección de contacto -->
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contenido principal del sitio -->
+  <main>
+    <!-- Sección de bienvenida -->
+     <h2>REALZA TU BELLEZA</h2> <!-- Título de la sección -->
+    <section id="inicio">
+      
+      <figure>
+      <img src="/imagenes/logo final.jpeg" alt="Imagen bienvenida"> <!-- Imagen decorativa -->
+      </figure>
+      <figcaption>Productos exclusivos.</figcaption> <!-- Texto introductorio -->
+      </section>
+      <div class="h3">
+        <h3>
+            Descubrí el arte de la belleza elevada. Nuestra colección de cosméticos de lujo fusiona innovación científica con ingredientes exclusivos para ofrecerte una experiencia sensorial única. Cada producto está diseñado para realzar tu belleza natural, brindando resultados visibles y una sensación de sofisticación en cada aplicación. Sumergite en un mundo donde la excelencia y el cuidado personal se encuentran, y permití que tu piel refleje la elegancia que merecés.
+        </h3>
+      </div>
+
+    <!-- Sección de productos -->
+    <section id="productos">
+      <h2>Productos</h2> <!-- Título de la sección -->
+      <div class="productos-container"> <!-- Contenedor de los productos -->
+        <div class="producto"> <!-- Primer producto -->
+          <img src="/imagenes/WhatsApp Image 2025-04-27 at 22.44.46.jpeg" alt="Producto 1"> <!-- Imagen del producto -->
+          <p>Producto 1</p> <!-- Descripción del producto -->
         </div>
-        <nav class="nav" > <!-- barra de navegación con un menu de navegación -->
-            <ul class="nav-links">
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Proyects</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Productos</a></li>
-            </ul>
-        </nav>
-        <a href="#" class="btn"><button>Contact</button></a>
-    </header>
-    <main> <!-- contenido princpal de la página -->
-        <h1>PRODUCTOS FEMENINA</h1>
-        <div class="imagenes">
-            <img src="imagenes/WhatsApp Image 2025-04-27 at 22.44.46.jpeg" alt="img1">
-            <img src="imagenes/WhatsApp Image 2025-04-27 at 22.44.46.jpeg" alt="img2">
-            <img src="imagenes/WhatsApp Image 2025-04-27 at 22.44.46.jpeg" alt="img3">
-            <img src="imagenes/WhatsApp Image 2025-04-27 at 22.44.46.jpeg" alt="img4">
-            <img src="imagenes/WhatsApp Image 2025-04-27 at 22.44.46.jpeg" alt="img5">
-            <img src="imagenes/WhatsApp Image 2025-04-27 at 22.44.46.jpeg" alt="img6">
-            <img src="imagenes/WhatsApp Image 2025-04-27 at 22.44.46.jpeg" alt="img7">
-            <img src="imagenes/WhatsApp Image 2025-04-27 at 22.44.46.jpeg" alt="img8">
-            <img src="imagenes/WhatsApp Image 2025-04-27 at 22.44.46.jpeg" alt="img9">
-            <img src="imagenes/WhatsApp Image 2025-04-27 at 22.44.46.jpeg" alt="img10">
-            <img src="imagenes/WhatsApp Image 2025-04-27 at 22.44.46.jpeg" alt="img11">
-            <img src="imagenes/WhatsApp Image 2025-04-27 at 22.44.46.jpeg" alt="img12">
-
+        <div class="producto"> <!-- Segundo producto -->
+          <img src="/imagenes/WhatsApp Image 2025-04-27 at 22.44.47 (1).jpeg" alt="Producto 2">
+          <p>Producto 2</p>
         </div>
-        <section>
-            <aside> 
+        <div class="producto"> <!-- Tercer producto -->
+          <img src="/imagenes/WhatsApp Image 2025-04-27 at 22.44.47.jpeg" alt="Producto 3">
+          <p>Producto 3</p>
+        </div>
+        <div class="producto"> <!-- Tercer producto -->
+          <img src="/imagenes/WhatsApp Image 2025-04-27 at 22.44.47.jpeg" alt="Producto 3">
+          <p>Producto 3</p>
+        </div>
+        <div class="producto"> <!-- Tercer producto -->
+          <img src="/imagenes/WhatsApp Image 2025-04-27 at 22.44.47.jpeg" alt="Producto 3">
+          <p>Producto 3</p>
+        </div>
+        <div class="producto"> <!-- Tercer producto -->
+          <img src="/imagenes/WhatsApp Image 2025-04-27 at 22.44.47.jpeg" alt="Producto 3">
+          <p>Producto 3</p>
+        </div>
+        <div class="producto"> <!-- Tercer producto -->
+          <img src="/imagenes/WhatsApp Image 2025-04-27 at 22.44.47.jpeg" alt="Producto 3">
+          <p>Producto 3</p>
+        </div>
+        <div class="producto"> <!-- Tercer producto -->
+          <img src="/imagenes/WhatsApp Image 2025-04-27 at 22.44.47.jpeg" alt="Producto 3">
+          <p>Producto 3</p>
+        </div>
+        <div class="producto"> <!-- Tercer producto -->
+          <img src="/imagenes/WhatsApp Image 2025-04-27 at 22.44.47.jpeg" alt="Producto 3">
+          <p>Producto 3</p>
+        </div>
+        <div class="producto"> <!-- Tercer producto -->
+          <img src="/imagenes/WhatsApp Image 2025-04-27 at 22.44.47.jpeg" alt="Producto 3">
+          <p>Producto 3</p>
+        </div>
+        <div class="producto"> <!-- Tercer producto -->
+          <img src="/imagenes/WhatsApp Image 2025-04-27 at 22.44.47.jpeg" alt="Producto 3">
+          <p>Producto 3</p>
+        </div>
+        <div class="producto"> <!-- Tercer producto -->
+          <img src="/imagenes/WhatsApp Image 2025-04-27 at 22.44.47.jpeg" alt="Producto 3">
+          <p>Producto 3</p>
+        </div>
+        <div class="producto"> <!-- Tercer producto -->
+          <img src="/imagenes/WhatsApp Image 2025-04-27 at 22.44.47.jpeg" alt="Producto 3">
+          <p>Producto 3</p>
+        </div>
+        <div class="producto"> <!-- Tercer producto -->
+          <img src="/imagenes/WhatsApp Image 2025-04-27 at 22.44.47.jpeg" alt="Producto 3">
+          <p>Producto 3</p>
+        </div>
+        <div class="producto"> <!-- Tercer producto -->
+          <img src="/imagenes/WhatsApp Image 2025-04-27 at 22.44.47.jpeg" alt="Producto 3">
+          <p>Producto 3</p>
+        </div>
+        <div class="producto"> <!-- Tercer producto -->
+          <img src="/imagenes/WhatsApp Image 2025-04-27 at 22.44.47.jpeg" alt="Producto 3">
+          <p>Producto 3</p>
+        </div>
+      </div>
+    </section>
 
-            </aside>
-        </section>
-        <section>
-            
-                <video width="570px" controls>
-                    <source src="imagenes/video.mp4" type="">
-                    <track src="subtitulos.vtt" kind="subtitles" srclang="es" label="Spanish"/>
-                </video>
-        </section>
-        <section class="formulario" >
-            <h3>Formulario de Contacto</h3>
-            <form action="https://formspree.io/f/mgvkonvy" method="post">   
+    <!-- Sección de contacto -->
+    <section id="contacto">
+      <h2>Contacto</h2> <!-- Título de la sección -->
+      <form action="#" method="POST"> <!-- Formulario de contacto -->
+        <label for="nombre">Nombre:</label> <!-- Etiqueta para el nombre -->
+        <input type="text" id="nombre" name="nombre" required> <!-- Campo de texto obligatorio -->
 
-                <label for="nombre">Nombre</label>
-                <input required type="text" name="nombre" id="nombre" placeholder="nombre">
+        <label for="correo">Correo electrónico:</label> <!-- Etiqueta para correo -->
+        <input type="email" id="correo" name="correo" required> <!-- Campo de email obligatorio -->
 
-                <label for="email">Correo electronico</label>
-                <input type="email" name="email" id="email" placeholder="Correo electronico">
+        <label for="mensaje">Mensaje:</label> <!-- Etiqueta para el mensaje -->
+        <textarea id="mensaje" name="mensaje" required></textarea> <!-- Área de texto obligatorio -->
 
-                <br>
+        <button type="submit">Enviar</button> <!-- Botón de envío -->
+      </form>
+    </section>
+  </main>
 
-                <label for="Mensaje">Mensaje</label>
-                <textarea name="mensaje" id="mensaje" rows="4" cols="50"
-                placeholder="mensaje"></textarea>
-
-                <br>
-
-                <label for="Tema">Motivo de contacto:</label>
-                <select name="Tema" id="Tema">
-                    <option value="consulta">Consulta</option>
-                    <option value="sugerencia">Sugerencia</option>
-                    <option value="Unite">Unite</option>
-                </select>    
-                <br><br>
-                <button type="submit">Enviar</button>
-            </form>
-        </section>
-    </main>
-    <footer> <!-- pie de pagina, redes socilaes, etc. -->
-
-
-    </footer>
-    <script src="/pre_entrega/Navbar.js"></script>
+  <!-- Pie de página -->
+  <footer>
+    <p>&copy; 2025 Mi Sitio Web</p> <!-- Derechos de autor -->
+  </footer>
 </body>
+
 </html>
