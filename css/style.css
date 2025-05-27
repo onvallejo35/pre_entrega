@@ -54,13 +54,7 @@ figure img {
 figcaption{
   font-size: x-large;
   font-weight: 800;
-  color: #e5f4f4;
- 
-  
-}
-#inicio figcaption {
-  background-color: #3f3f3d;
-  
+  color: black; 
 }
 
 /* Contenedor de los productos con Flexbox */
@@ -76,15 +70,11 @@ figcaption{
 h2{
     text-align: center;
     font-size: 2rem;
-    
-    
-
 }
 
 
 #inicio{
     background-image: url(/imagenes/portada\ final.jpg);
-    
 }
 
 
@@ -166,7 +156,7 @@ footer {
 footer .redesSociales{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   padding: 15px 10px;
 }
