@@ -1,1 +1,1 @@
-Esta pagina web es proyecto el cual se basa en la venta de productos para el cuidado y la belleza femenina.
+Esta pagina web es un proyecto el cual se basa en la venta de productos para el cuidado y la belleza femenina y a futuro se extendera en armar un ecomerce automatizado.

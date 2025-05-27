@@ -40,15 +40,12 @@ section {
   text-align: center;        /* Centra el texto */
   color: #060808;
   align-items: center;
-  
 }
 
 figure img {
     width: 18em;
     border-radius: 50%;
-    box-shadow: 0px 0px 50px rgba(247, 6, 118, 0.9);
-    
-    
+    box-shadow: 0px 0px 70px rgba(247, 6, 118, 0.9);
 }
 
 figcaption{
@@ -82,7 +79,6 @@ h2{
 .producto {
   text-align: center;        /* Centra el contenido */
   box-shadow: 0 10px 20px rgba(247, 6, 118, 0.7);
-  
 }
 
 /* Imágenes de los productos */
@@ -102,15 +98,17 @@ h2{
 }
 
 #video{
-  display: flex;
+  display:flex;
   justify-content: center;
+  align-items: center;
   
 }
-
-iframe{
-  width: 600px;
-  height: 350px;
+.iframe{
+  width: 450px;
+  height: 300px;
+  margin: 10px;
 }
+
 
 #contacto{
     background-image: url(/imagenes/portada\ final.jpg);
@@ -123,7 +121,6 @@ form {
   gap: 10px;                 /* Espacio entre campos */
   max-width: 500px;          /* Ancho máximo */
   margin: 0 auto;            /* Centrado horizontal */
-  
 }
 
 /* Campos del formulario */
