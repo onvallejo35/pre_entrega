@@ -111,6 +111,16 @@ h2{
     padding: 1em;
 }
 
+#video{
+  display: flex;
+  justify-content: center;
+  
+}
+
+iframe{
+  width: 600px;
+  height: 350px;
+}
 
 #contacto{
     background-image: url(/imagenes/portada\ final.jpg);
@@ -150,6 +160,20 @@ footer {
   text-align: center;        /* Centrado de texto */
   padding: 15px;             /* Espacio interior */
   margin-top: 30px;          /* Separación del contenido anterior */
+
+}
+
+footer .redesSociales{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 15px 10px;
+}
+
+footer .redesSociales a{
+  font-size: 35px;
+  color: #fff;
 }
 
 /* ------------------ MEDIA QUERIES ------------------ */
